@@ -10,6 +10,7 @@
 body {
   background-image: url("../imgs/christmas.jpg");
   min-height: 100vh;
+  padding: 10px 50px;
   background-size: cover;
   background-position: center center;
   display: -webkit-box;
@@ -27,6 +28,7 @@ body {
 
 h1 {
   font-size: 4rem;
+  text-align: center;
 }
 
 .big-text {
@@ -38,11 +40,15 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70vw;
-  margin-top: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 20px auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .countdown-container div {
@@ -65,5 +71,15 @@ h1 {
 .countdown-container div span {
   font-size: 1.25rem;
   font-weight: bolder;
+}
+
+.countdown-container div + div {
+  margin-left: 50px;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
