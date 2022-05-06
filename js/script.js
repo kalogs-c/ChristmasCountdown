@@ -3,7 +3,7 @@ const hoursDiv = document.querySelector('.hours')
 const minutesDiv = document.querySelector('.minutes')
 const secondsDiv = document.querySelector('.seconds')
 
-const christmas = '25 Dec 2021'
+const christmas = '25 Dec 2022'
 
 const formatTime = time => {
     return time < 10 ? `0${time}` : time
